@@ -6,12 +6,12 @@
   flex-direction: column;
 }
 
-.menu{
+.menu,.quiz,.gameover{
   height: 600px;
   width: 40%;
   min-width: 380px;
   display: flex;
-  justify-content: space-around;
+  
   align-items: center;
   flex-direction: column;
   background-color: #bd2035;
@@ -40,16 +40,11 @@
 }
 
 .quiz{
-  height: 600px;
-  width: 42%;
-  padding: 1rem;
-  min-width: 380px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #bd2035;
-  border-radius: 1rem;
+  
   color: white;
+}
+.quiz h2{
+  margin-left:1rem;
 }
 .options{
   display: flex;
@@ -72,7 +67,27 @@
   cursor: pointer;
   transition: ease-in 0.5s;
 }
-.btnoption:hover{
+.btnoption:hover,.btnoption:focus{
   background-color: rgb(22, 173, 8);
 }
+.nextbtn{
+  height: 3rem;
+  width: 150px;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  background-color: rgb(182, 247, 118);
+  box-shadow: inset 0 0 0 0 rgb(0, 110, 255);
+  transition: ease-in 0.4s;
+  border-radius: 1rem;
+}
+.nextbtn:hover{
+  box-shadow: inset 150px 0 0 0 rgb(0, 110, 255);
+  cursor: pointer;
+  color:white
+}
 
+.gameover img{
+  width: 100%;
+  height: 400px;
+
+}
